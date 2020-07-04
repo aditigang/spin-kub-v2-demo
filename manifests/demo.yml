@@ -16,18 +16,18 @@ metadata:
   labels:
     source: demo
     stack: frontend
-    app: spinnaker
+    app: spinnakernew
 spec:
   replicas: 3
   selector:
     matchLabels:
       source: demo
-      app: spinnaker
+      app: spinnakernew
   template:
     metadata:
       labels:
         source: demo
-        app: spinnaker
+        app: spinnakernew
     spec:
       containers:
       - name: primary
@@ -52,7 +52,7 @@ metadata:
 spec:
   selector:
     source: demo
-    app: spinnaker
+    app: spinnakernew
   ports:
   - protocol: TCP
     port: 80
